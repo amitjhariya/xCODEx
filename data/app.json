@@ -1,0 +1,8 @@
+{
+    "name": "codegene-app",
+    "type": "express-server",
+    "db": "mongo-db",
+    "services":[
+        "movies","comments","users"
+    ]
+}

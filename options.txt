@@ -1,0 +1,72 @@
+{
+    "name": "codegene-app",
+    "type": "express-server",
+    "db": "mongodb",
+    "services":[
+        "movies","comments","users"
+    ]
+}
+
+name => application name & directory
+
+type => express-server || react-frontend || mern-stack || mean-stack
+
+db => mongodb || mysql || postgress || dynamodb || casandra
+
+service => generate controllers , models , routes 
+
+authenticatrion
+
+pages => {
+    frontend:[home, about, contact ]
+}
+
+cloud => aws / gcp
+
+
+schema [
+    movies:[
+        name,
+        pic:{
+            event:{
+                upload: s3/gcp/file/db
+                flle=>> default_folder / uploads 
+                s3/gcp =>> bucket
+            }
+        }
+    ]
+]
+
+events
+
+pagination
+
+caching  //yes {
+    movie => [search, get ]
+    comments=>[get]
+}
+elastic_serach{
+
+}
+
+logging{
+
+}
+monitoring{
+
+
+}
+test[
+    movies
+    comments
+    users
+]
+
+deploy {
+    docker
+    code
+}
+
+
+
+
